@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: finance.app
+  datasource:
+    url: jdbc:mysql://localhost:3306/finance_app
+    username: root
+    password: ${DB_PASS}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+
+app:
+  security:
+    jwt:
+      secret-key: ${JWT_SECRET}
+      expiration-ms: 43200000 # 12 Hours in milliseconds
+      issuer: zorvyn-finance
+    cookie:
+      name: zorvyn_at
+      secure: ${COOKIE_SECURE}
+      http-only: true
+      same-site: Lax
+      domain: localhost
+      max-age-seconds: 43200 # 12 Hours in seconds
