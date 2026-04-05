@@ -1,7 +1,6 @@
-# zorvyn-finance-app
-🏦 Finance Dashboard Backend — Spring Boot REST API with JWT auth, role-based access control (VIEWER / ANALYST / ADMIN), financial record management, dashboard analytics, keyword search, and pagination. Built with Spring Security, JPA, MySQL, and Springdoc OpenAPI.
-
 # Zorvyn Finance Backend 💸💰
+
+🏦 Finance Dashboard Backend — Spring Boot REST API with JWT auth, role-based access control (VIEWER / ANALYST / ADMIN), financial record management, dashboard analytics, keyword search, and pagination. Built with Spring Security, JPA, MySQL, and Springdoc OpenAPI.
 
 A RESTful backend for a personal finance dashboard system built with **Spring Boot 3**, **Spring Security**, **JWT authentication**, and **MySQL**. Users can manage their own financial records and view summary analytics through a role-protected API.
 
